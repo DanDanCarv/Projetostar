@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Votação.css">
+    <title>Votação</title>
+</head>
+<body>
+<header>
+    <div class="interface">
+        <div class="Logo">
+            <a href="#">
+                <img src="../Imagens/Logotipo.png" alt="Logo CPS">
+            </a>
+        </div>
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="Pagina-inicial.html">Página Inicial</a></li>
+                <li><a href="#">Suporte CPS</a></li>
+                <li><a href="#">Gráfico</a></li>
+                <li><a href="#">Pessoas</a></li>
+                <li><a href="#">Processos</a></li>
+            </ul>
+        </nav>
+    </div>    
+</header> 
+    <div class="formulário">    
+        <form id="votingForm">
+            <div class="Estrela-Trimestral">
+                <div class="container">
+                    <div class="interface">
+                        <div class="flex">
+                            <div class="txt-Estrla-Trimestral">
+                                        <h1>Estrela Trimestral</h1>
+                                        <p>O projeto Estrela Trimestral tem como objetivo reconhecer e premiar cinco colaboradores destacados em cinco pilares principais: Desempenho e Resultados, Contribuição para a Cultura e Valores da Empresa, Trabalho em Equipe e Colaboração, Competências e Habilidades & Atitude e Comportamento
+
+                                            A votação ocorrerá ao longo de três meses. Se você perceber que algum colega de CPS se destacou em qualquer um desses pilares, compartilhe sua experiência e vote na pessoa que considera merecedora. Lembre-se de escolher com cuidado, pois uma vez feito o voto, você só poderá participar novamente no próximo período de três meses.</p>
+                                        <p>Vote para a pessoa que se destacou nos temas abaixo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="formulário2">    
+        <form id="votingForm2">
+            <div class="Estrela-Trimestral2">
+                <div class="container2">
+                    <div class="interface2">
+                        <div class="flex2">
+                            <div class="category">
+                                <label for="desempenho">
+                                    <div class="txt-Estrla-Trimestral2">
+                            <h3>Desempenho e Resultados:</h3>
+                            <h4>Excelência no Trabalho</h4>
+                            <p>Atua de forma coerente com a missão e princípios da empresa, demonstrando ética, compromisso e respeito no dia a dia.</p>
+                            <h4>Inovação e Proatividade</h4>
+                            <p>Valorizamos a contribuição de ideias novas e soluções criativas, incentivando a iniciativa que vai além das responsabilidades básicas.</p>
+                                    </div>
+                                </label>
+                        <select id="desempenho" name="desempenho" onchange="updateImage('desempenho', 'infoImage-desempenho', 'infoDisplay-desempenho', 'infoText-desempenho')">
+                         
+                            <!-- Opções de colaboradores aqui -->
+                            <option value="" disabled selected>Selecione o Colaborador a ser Restigiado</option>
+                            <option value="João Silva">João Silva</option>
+                            <option value="José Celbin ">José Celbin Geovani Aldana Sis</option>
+                            <option value="Julia Lopes">Julia Lopes Mendes Santos</option>
+                            <option value="Kaike De Souza" data-img="../Imagens/Kaike.jpeg" data-text="Kaike De Souza é um colaborador exemplar que vem se destacando por sua capacidade de impulsionar inovações e adotar uma abordagem proativa em todas as suas atividades. Sua dedicação ao trabalho e busca contínua por melhorias fazem dele uma peça-chave na equipe de Inovação da empresa.">Kaike De Souza</option>
+
+                                </select>
+                            </div>
+
+                      <!-- Seção para exibir a imagem e o texto -->
+                                <div id="infoDisplay-desempenho" class="info-display" >
+                            <div class="flex-row">
+                            <img id="infoImage-desempenho"  class="info-image" />
+                            <p id="infoText-desempenho"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Categoria 2: Contribuição para a Cultura e Valores da Empresa -->
+<div class="formulário2">    
+    <form id="votingForm2">
+        <div class="Estrela-Trimestral2">
+            <div class="container2">
+                <div class="interface2">
+                    <div class="flex2">                   
+                        <div class="category">
+                            <label for="cultura">
+                                <div class="txt-Estrla-Trimestral2">
+                                <h3>Contribuição para a Cultura e Valores da Empresa:</h3>
+                                <h4>Alinhamento com Valores:</h4>
+                                <p>Agir de acordo com os princípios e objetivos da empresa, refletindo sua missão e valores.</p>
+                                <h4>Promoção da Cultura Organizacional:</h4>
+                                <p>Participar ativamente na construção e fortalecimento da cultura da empresa.</p>
+                                </div>
+                            </label>
+                            <select id="cultura" name="cultura" onchange="updateImage('cultura', 'infoImage-cultura', 'infoDisplay-cultura', 'infoText-cultura')">
+                            <!-- Opções de colaboradores aqui -->
+                            <option value="" disabled selected>Selecione o Colaborador a ser Restigiado</option>
+                            <option value="João Silva">João Silva</option>
+                            <option value="José Celbin ">José Celbin Geovani Aldana Sis</option>
+                            <option value="Julia Lopes">Julia Lopes Mendes Santos</option>
+                            <option value="Kaike De Souza" data-img="../Imagens/Kaike.jpeg" data-text="Kaike De Souza é um colaborador exemplar que vem se destacando por sua capacidade de impulsionar inovações e adotar uma abordagem proativa em todas as suas atividades. Sua dedicação ao trabalho e busca contínua por melhorias fazem dele uma peça-chave na equipe de Inovação da empresa.">Kaike De Souza</option>
+
+                        </select>
+                    </div>
+
+                      <!-- Seção para exibir a imagem e o texto -->
+                      <div id="infoDisplay-cultura" class="info-display">
+                        <div class="flex-row"> 
+                            <img id="infoImage-cultura"  class="info-image" />
+                            <p id="infoText-cultura"></p>
+                            <p id="infoText-cultura"></p>
+                        </div>
+                    </div>
+                      <!-- Seção para exibir a imagem e o texto -->
+                            <div id="infoDisplay-cultura" class="info-display">
+                                <div class="flex-row"> 
+                            <img id="infoImage-cultura"  class="info-image" />
+                            <p id="infoText-cultura"></p>
+                            <p id="infoText-cultura"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Categoria 3: Trabalho em Equipe e Colaboração -->
+<div class="formulário2">    
+    <form id="votingForm2">
+        <div class="Estrela-Trimestral2">
+            <div class="container2">
+                <div class="interface2">
+                    <div class="flex2">
+                        <div class="category">
+                            <label for="equipe">
+                                <div class="txt-Estrla-Trimestral2">
+                            <h3>Trabalho em Equipe e Colaboração:</h3>
+                            <h4>Colaboração Eficaz</h4>  
+                            <p>Trabalhar de forma harmoniosa com os colegas, promovendo um ambiente colaborativo.</p>
+                            <h4>Liderança e Mentoria:</h4>
+                            <p>Guiar e apoiar outros membros da equipe para o crescimento coletivo.</p> 
+                                </div> 
+                            </label>
+                        <select id="equipe" name="equipe" onchange="updateImage('equipe', 'infoImage-equipe', 'infoDisplay-equipe', 'infoText-equipe')">
+                            <!-- Opções de colaboradores aqui -->
+                            <option value="" disabled selected>Selecione o Colaborador a ser Restigiado</option>
+                            <option value="João Silva">João Silva</option>
+                            <option value="José Celbin ">José Celbin Geovani Aldana Sis</option>
+                            <option value="Julia Lopes">Julia Lopes Mendes Santos</option>
+                            <option value="Kaike De Souza" data-img="../Imagens/Kaike.jpeg" data-text="Kaike De Souza é um colaborador exemplar que vem se destacando por sua capacidade de impulsionar inovações e adotar uma abordagem proativa em todas as suas atividades. Sua dedicação ao trabalho e busca contínua por melhorias fazem dele uma peça-chave na equipe de Inovação da empresa.">Kaike De Souza</option>
+
+                        </select>
+                    </div>
+
+                      <!-- Seção para exibir a imagem e o texto -->
+                      <div id="infoDisplay-equipe" class="info-display" >
+                        <div class="flex-row">
+                        <img id="infoImage-equipe"  class="info-image" />
+                        <p id="infoText-equipe"></p>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+                    <!-- Categoria 4: Competências e Habilidades -->
+<div class="formulário2">    
+    <form id="votingForm2">
+        <div class="Estrela-Trimestral2">
+            <div class="container2">
+                <div class="interface2">
+                    <div class="flex2">
+                    <div class="category">
+                        <label for="competencias">
+                            <div class="txt-Estrla-Trimestral2">
+                            <h3>Competências e Habilidades:</h3>
+                            <h4>Desenvolvimento Contínuo:</h4>
+                            <p>Investimento no aprimoramento constante de competências ao longo da carreira.</p>
+                            <h4>Especialização:</h4>
+                            <p>Tornar-se um especialista em uma área específica, aprofundando conhecimentos.</p>
+                            </div>
+                        </label>
+                        <select id="competencias" name="competencias" onchange="updateImage('competencias', 'infoImage-competencias', 'infoDisplay-competencias', 'infoText-competencias')">
+                            <!-- Opções de colaboradores aqui -->
+                            <option value="" disabled selected>Selecione o Colaborador a ser Restigiado</option>
+                            <option value="João Silva">João Silva</option>
+                            <option value="José Celbin ">José Celbin Geovani Aldana Sis</option>
+                            <option value="Julia Lopes">Julia Lopes Mendes Santos</option>
+                            <option value="Kaike De Souza" data-img="../Imagens/Kaike.jpeg" data-text="Kaike De Souza é um colaborador exemplar que vem se destacando por sua capacidade de impulsionar inovações e adotar uma abordagem proativa em todas as suas atividades. Sua dedicação ao trabalho e busca contínua por melhorias fazem dele uma peça-chave na equipe de Inovação da empresa.">Kaike De Souza</option>
+
+                        </select>
+                    </div>
+
+                      <!-- Seção para exibir a imagem e o texto -->
+                      <div id="infoDisplay-competencias" class="info-display" >
+                        <div class="flex-row">
+                        <img id="infoImage-competencias"  class="info-image" />
+                        <p id="infoText-competencias"></p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+                    
+                            <!-- Categoria 5: Atitude e Comportamento -->
+<div class="formulário2">    
+    <form id="votingForm2">
+        <div class="Estrela-Trimestral2">
+            <div class="container2">
+                <div class="interface2">
+                    <div class="flex2">
+                        <div class="category">
+                            <label for="atitude">
+                                <div class="txt-Estrla-Trimestral2">
+                            <h3>Atitude e Comportamento:</h3>
+                            <h4>Comportamento Ético:</h4>
+                            <p>Agir de maneira ética, mantendo altos padrões de conduta no trabalho.</p>
+                            <h4>Positividade e Resiliência:</h4>
+                            <p>Manter uma atitude otimista e enfrentar desafios com determinação.</p>
+                                </div>
+                        </label>
+                        <select id="atitude" name="atitude" onchange="updateImage('atitude', 'infoImage-atitude', 'infoDisplay-atitude', 'infoText-atitude')">
+                            <!-- Opções de colaboradores aqui -->
+                            <option value="" disabled selected>Selecione o Colaborador a ser Restigiado</option>
+                            <option value="João Silva">João Silva</option>
+                            <option value="José Celbin ">José Celbin Geovani Aldana Sis</option>
+                            <option value="Julia Lopes">Julia Lopes Mendes Santos</option>
+                            <option value="Kaike De Souza" data-img="../Imagens/Kaike.jpeg" data-text="Kaike De Souza é um colaborador exemplar que vem se destacando por sua capacidade de impulsionar inovações e adotar uma abordagem proativa em todas as suas atividades. Sua dedicação ao trabalho e busca contínua por melhorias fazem dele uma peça-chave na equipe de Inovação da empresa.">Kaike De Souza</option>
+
+                        </select>
+                    </div>
+                    <!-- Exibição da imagem e texto abaixo do select -->
+                    <div id="infoDisplay-atitude" class="info-display" >
+                        <div class="flex-row">
+                        <img id="infoImage-atitude"  class="info-image" />
+                        <p id="infoText-atitude"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+                    <!-- Botão de Enviar Voto -->
+                    <button type="submit">Enviar Voto</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+   // Função para obter dados armazenados
+function getStoredData() {
+    return JSON.parse(localStorage.getItem('votingData') || '{}');
+}
+
+function setStoredData(data) {
+    localStorage.setItem('votingData', JSON.stringify(data));
+}
+
+// Função para verificar se a votação é permitida (a cada 3 meses)
+function isVotingAllowed() {
+    const lastVoteTime = localStorage.getItem('lastVoteTime');
+    const now = new Date();
+
+    if (lastVoteTime) {
+        const lastVoteDate = new Date(lastVoteTime);
+        const diffMonths = (now.getFullYear() - lastVoteDate.getFullYear()) * 12 + (now.getMonth() - lastVoteDate.getMonth());
+        return diffMonths >= 3; // Permite nova votação a cada 3 meses
+    }
+    return true;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById('votingForm');
+    const errorDiv = document.getElementById('errorDiv');
+
+    if (!form) {
+        console.error("Erro: Formulário não encontrado!");
+        return;
+    }
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        // Verifica se o usuário já votou nos últimos 3 meses
+        if (!isVotingAllowed()) {
+            errorDiv.textContent = 'Você já votou recentemente. Aguarde o próximo trimestre para votar novamente.';
+            return;
+        }
+
+        // Obtenha os dados do formulário
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        // Armazene os dados e registre a data da votação
+        setStoredData(data);
+        localStorage.setItem('lastVoteTime', new Date().toISOString());
+
+        errorDiv.textContent = 'Obrigado pelo seu voto!';
+        form.reset();
+    });
+});
+
+// Função para atualizar imagem
+function updateImage(selectId, imgId, displayId, textId) {
+    var select = document.getElementById(selectId);
+    var img = document.getElementById(imgId);
+    var display = document.getElementById(displayId);
+    var text = document.getElementById(textId);
+
+    var selectedOption = select.options[select.selectedIndex];
+    var imgSrc = selectedOption.getAttribute('data-img');
+    var textContent = selectedOption.getAttribute('data-text');
+
+    if (imgSrc && textContent) {
+        img.src = imgSrc;
+        text.textContent = textContent;
+        display.style.display = 'block';
+    } else {
+        display.style.display = 'none';
+    }
+}
+
+// Certifique-se de que `collaboratorsInfo` existe antes de usar
+const selectElement = document.querySelector('select[name="atitude"]');
+if (selectElement) {
+    selectElement.addEventListener('change', function () {
+        const selectedValue = this.value;
+        if (window.collaboratorsInfo && window.collaboratorsInfo[selectedValue]) {
+            const infoDisplay = document.getElementById('infoDisplay-atitude');
+            const infoImage = document.getElementById('infoImage-atitude');
+            const infoText = document.getElementById('infoText-atitude');
+
+            infoImage.src = window.collaboratorsInfo[selectedValue].img;
+            infoText.textContent = window.collaboratorsInfo[selectedValue].text;
+            infoDisplay.style.display = 'block';
+        } else {
+            document.getElementById('infoDisplay-atitude').style.display = 'none';
+        }
+    });
+}
+
+    </script>
+    
+
+</body>
+</html>

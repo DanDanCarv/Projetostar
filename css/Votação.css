@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic";
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('fonts/GOTHIC.TTF') format('truetype'),
+         url('fonts/GOTHICB.TTF') format('truetype'),
+         url('fonts/GOTHICBI.TTF') format('truetype'),
+         url('fonts/GOTHICI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+h1, h2, h3,h4, p {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+
+body {
+    background-color:  #fff0ca;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding-top: 100px
+}
+
+/* Estilos para a interface */
+.interface, .interface2 {
+    display: flex;
+    justify-content: space-between; /* Distribui logo e menu */
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Flexbox geral */
+.flex {
+    display: flex;
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    background-color: white; /* Fundo branco */
+    border-bottom: 1px solid #ddd; /* Linha separadora */
+    padding: 10px 0;
+    position: fixed; /* Fixa no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px
+}
+
+.container {
+    position: relative; /* Mantém elementos filhos posicionados corretamente */
+    background: white;
+    border-radius: 10px; /* Mantém a borda arredondada */
+    padding: 20px;
+    margin-top: 6px; /* Evita que a linha fique sobreposta ao container */
+}
+
+.container::before {
+    content: ""; 
+    position: absolute;
+    top: -36px; /* Garante que a linha fique exatamente no topo */
+    left: -31px;
+    width: calc(100% + 62px);
+    height: 12px;
+    background:  rgb(255, 184, 4);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo do topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    font-size: 34px;
+    line-height: 35px;
+}
+
+.topo-do-site .txt-topo-site p {
+    margin: 35px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Estilo para a seção Estrela-Trimestral */
+section.Estrela-Trimestral {
+    padding: 10px 4%;
+    margin-top: 0px;
+}
+
+.Estrela-Trimestral .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.Estrela-Trimestral .txt-Estrla-Trimestral {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.Estrela-Trimestral .txt-Estrla-Trimestral h1 {
+    color: rgb(255, 184, 4);
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.Estrela-Trimestral .txt-Estrla-Trimestral p {
+    margin: 10px;
+    font-size: 17px;
+    line-height: 18px;
+    color: #333;
+}
+
+.Estrela-Trimestral2 .txt-Estrla-Trimestral2 p {
+    margin: 10px;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: left
+    
+}
+
+.Estrela-Trimestral2 .txt-Estrla-Trimestral2 h3 {
+    color: rgb(255, 184, 4);
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.Estrela-Trimestral2 .txt-Estrla-Trimestral2 h4 {
+    margin: 10px;
+    font-size: 19px;
+    line-height: 20px;
+}
+
+/* Estilos do formulário */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    width: 80%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Estilo para os títulos e descrições das categorias */
+.category h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.category p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Estilos para o botão */
+button[type="submit"] {
+    background-color: rgb(255, 204, 76);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button[type="submit"]:hover {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: rgb(255, 183, 0);
+    margin: 10px
+}
+
+/* Ajustes para o layout dos selects */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Mensagens de erro */
+#errorDiv {
+    color: red;
+    font-size: 1em;
+    margin-bottom: 20px;
+    
+}
+
+/* Estilizando imagens dos colaboradores */
+.colaborador-img {
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Exibição de imagem e texto */
+.info-display {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info-image {
+    width: 150px;
+    height: auto;
+}
+
+.info-display img {
+    width: 200px;
+    height: auto;
+    border-radius: 4%;
+    margin-right: 20px;
+}
+
+.info-display p {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Flex row */
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
